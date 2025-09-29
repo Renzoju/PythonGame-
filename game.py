@@ -3,7 +3,7 @@ import random
 import winsound
 from turtle import Turtle, Screen
 
-# Function to start the game
+
 def start_game():
     class Bullet(Turtle):
         def __init__(self, direction):
@@ -309,9 +309,9 @@ def start_game():
                         winsound.PlaySound("hit.wav", winsound.SND_ASYNC)
                         print("Player 2 hits Player 1!")
 
-        move_barriers()  # Move barriers in sync
+        move_barriers()  
 
     screen.mainloop()
 
-# Start the game directly
+
 start_game()
